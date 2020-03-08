@@ -64,6 +64,7 @@ class Song
   
   def self.create_from_filename(file)
     song = Song.new_from_filename(file)
+    song.save
     binding.pry
   end
 end
