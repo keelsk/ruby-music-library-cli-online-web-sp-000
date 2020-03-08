@@ -63,8 +63,6 @@ class Song
   end
   
   def self.create_from_filename(file)
-    song_name = file.split(" - ")[1]
-    song_artist = file.split(" - ")[0]
-    song_genre = file.split(" - ")[2].split(".")[0]
+    Song.create_from_filename(file)
   end
 end
